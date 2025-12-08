@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<div class="chat-wrapper">
+
+    <div class="chat-header">
+        <img src="{{ url_for('static', filename='img/medical_bot.png') }}" class="header-icon">
+        <h2>MediCare AI Assistant</h2>
+    </div>
+
+    <div class="chat-body" id="chatBody"></div>
+
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask something about symptoms, diseases or treatment..." />
+        <button type="button" onclick="sendMessage()">➤</button>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
